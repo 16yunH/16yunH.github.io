@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Yun Hong / Site Title"
+title                    : "YUN HONG"
 title_separator          : "-"
 name                     : &name "Yun Hong"
 description              : &description "personal description"
@@ -23,7 +23,7 @@ repository               : "16yunH/16yunH.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Yun Hong"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
