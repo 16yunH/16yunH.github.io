@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "YUN HONG"
+title                    : "Yun Hong | Computer Science Student"
 title_separator          : "-"
 name                     : &name "Yun Hong"
-description              : &description "personal description"
+description              : &description "Computer Science student at Fudan University, Exchange student at UT Austin"
 url                      : https://16yunH.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "16yunH/16yunH.github.io"
@@ -25,11 +25,11 @@ author:
   avatar           : "photo_white.png"
   name             : "Yun Hong"
   pronouns         : # example: "she/her"  
-  bio              : "A Computer Science student at Fudan University , passionate about building intelligent systems through Machine Learning."
-  location         : "Shanghai, China"
+  bio              : "Computer Science student at Fudan University | Exchange student at UT Austin | Research in ML, AI-Driven Autonomous Driving, and NLP"
+  location         : "Austin, Texas / Shanghai, China"
   employer         : "Fudan University"
   uri              : # URL
-  email            : "hy20051123@gmail.com" 
+  email            : "yh26768@utexas.edu" 
 
   # Academic websites
   academia         : # URL

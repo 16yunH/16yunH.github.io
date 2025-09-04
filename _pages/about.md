@@ -1,52 +1,82 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Welcome to Yun Hong's Academic Portfolio"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+## About Me
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am Yun Hong (洪云), a Computer Science student at **Fudan University** (复旦大学) in Shanghai, China, and currently an exchange student at the **University of Texas at Austin**. My research interests span Machine Learning, AI-Driven Autonomous Driving, and Natural Language Processing.
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+*"So we beat on, boats against the current."*
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+## Current Research
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+### Research on ChatGPT-o1 Model Reproduction and Reflection Ability Improvement
+**Research Assistant** | Fudan University Natural Language Processing Group  
+*Sep. 2024 - Jun. 2025*
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+Under the guidance of Professor Xuanjing Huang, I work on introducing self-inspection and correction mechanisms into model reasoning to improve performance in complex tasks. My responsibilities include:
+- Synthesis and training of self-critic data based on Llama3.1-8b-instruct
+- Generating "reflection" answers from wrong to right using diverse strategies
+- Constructing complex reflection paths based on tree search reasoning
+- Performance evaluation using GSM8K test sets
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+### Learning Risk Map for Autonomous Driving in Partially Observable Environments
+**Research Focus** | MagicLab, Fudan University  
+*Oct. 2024 - May 2025*
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+Working under the guidance of Wenchao Ding on risk maps for autonomous driving:
+- Engineered risk field representations using advanced spatiotemporal modeling techniques
+- Developed realistic traffic scene generation leveraging diffusion models with gradient optimization  
+- Designed a lightweight neural network for efficient risk prediction
+- Research submitted to IEEE Robotics and Automation Letters (RAL)
 
-**Markdown generator**
+## Education
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+**Fudan University** | Shanghai, China  
+*B.S. Candidate in Computer Science* | Sep. 2023 - Present
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+**University of Texas at Austin** | Austin, Texas  
+*Exchange Student in Computer Science* | Aug. 2025 - Dec. 2025
+
+## Technical Skills
+
+- **Machine Learning**: Completed ML2022 by Hung-yi Lee, proficient in various ML algorithms
+- **Deep Learning**: CNN, RNN, LSTM, Transformer, GAN, Diffusion Models, PyTorch
+- **Programming**: C, C++, Python, Java, LaTeX
+- **AI-Driven Systems**: Autonomous Driving (planning, prediction, decision making)
+- **Data Structures & Algorithms**: Completed Data Structure (Honor) course with strong foundation
+- **Languages**: Chinese (Native), English (Fluent)
+
+## Featured Projects
+
+### [MapNavigation](https://github.com/16yunH/MapNavigation)
+*Dec. 2024 - Present*
+- Combines OpenStreetMap data with Gaode Maps API for accurate routing and location search
+- Features hybrid point selection, detailed route information, and support for different road types
+- Independent development with long-term maintenance commitment
+
+### [NeuralStyle](https://github.com/16yunH/NeuralStyle)  
+*Jun. 2025 - Present*
+- Modular neural style transfer toolkit with clear separation for maintainability
+- Batch processing capabilities for automated multi-image/multi-style workflows
+- Interactive web interface and configurable pipeline
+- Open-source with continuous updates
+
+## Contact
+
+📧 **Email**: [yh26768@utexas.edu](mailto:yh26768@utexas.edu)  
+📍 **Address**: 2819 Rio Grande St., Unit 515, Austin, Texas 78705  
+📱 **Phone**: +1 (512) 879-7214  
+💻 **GitHub**: [@16yunH](https://github.com/16yunH)
+
+---
+
+*This website is built using the Academic Pages template and hosted on GitHub Pages.* 
 
 Example: editing a Markdown file for a talk
 ![Editing a Markdown file for a talk](/images/editing-talk.png)
