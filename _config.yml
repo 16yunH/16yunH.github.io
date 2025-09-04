@@ -25,11 +25,11 @@ author:
   avatar           : "photo_white.png"
   name             : "Yun Hong"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "A Computer Science student at Fudan University , passionate about building intelligent systems through Machine Learning."
+  location         : "Shanghai, China"
+  employer         : "Fudan University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "hy20051123@gmail.com" 
 
   # Academic websites
   academia         : # URL
