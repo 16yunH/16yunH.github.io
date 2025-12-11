@@ -1,0 +1,9 @@
+main:
+  - title: "发表论文"
+    url: /cn/publications/
+    
+  - title: "项目作品"
+    url: /cn/portfolio/
+    
+  - title: "简历"
+    url: /cn/cv/

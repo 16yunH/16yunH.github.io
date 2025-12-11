@@ -6,8 +6,20 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% for link in site.data.navigation.main %}
+          <li class="masthead__menu-item masthead__menu-item--lg persist">
+            {% if page.lang == 'zh' %}
+              <a href="{{ base_path }}/cn/">{{ site.title }}</a>
+            {% else %}
+              <a href="{{ base_path }}/">{{ site.title }}</a>
+            {% endif %}
+          </li>
+          
+          {% assign navigation = site.data.navigation.main %}
+          {% if page.lang == 'zh' %}
+            {% assign navigation = site.data.navigation_cn.main %}
+          {% endif %}
+          
+          {% for link in navigation %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
@@ -15,6 +27,19 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
+          
+          <li class="masthead__menu-item">
+            {% if page.lang == 'zh' %}
+              {% assign en_url = page.url | replace: '/cn/', '/' %}
+              {% if page.url == '/cn/' %}{% assign en_url = '/' %}{% endif %}
+              <a href="{{ base_path }}{{ en_url }}" style="font-weight: bold;">EN</a>
+            {% else %}
+              {% assign cn_url = '/cn' | append: page.url %}
+              {% if page.url == '/' %}{% assign cn_url = '/cn/' %}{% endif %}
+              <a href="{{ base_path }}{{ cn_url }}" style="font-weight: bold;">中文</a>
+            {% endif %}
+          </li>
+
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
