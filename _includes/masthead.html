@@ -34,11 +34,11 @@
             {% if page.lang == 'zh' %}
             {% assign en_url = page.url | replace: '/cn/', '/' %}
             {% if page.url == '/cn/' %}{% assign en_url = '/' %}{% endif %}
-              <span style="font-weight: bold; cursor: default;">中</span> / <a href="{{ base_path }}{{ en_url }}">EN</a>
+            <span style="font-weight: bold; cursor: default;">中</span> / <a href="{{ base_path }}{{ en_url }}">EN</a>
             {% else %}
-              {% assign cn_url = '/cn' | append: page.url %}
-              {% if page.url == '/' %}{% assign cn_url = '/cn/' %}{% endif %}
-              <span style="font-weight: bold; cursor: default;">EN</span> / <a href="{{ base_path }}{{ cn_url }}">中</a>
+            {% assign cn_url = '/cn' | append: page.url %}
+            {% if page.url == '/' %}{% assign cn_url = '/cn/' %}{% endif %}
+            <span style="font-weight: bold; cursor: default;">EN</span> / <a href="{{ base_path }}{{ cn_url }}">中</a>
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"
                 title="toggle theme"></i></a>
           </li>
