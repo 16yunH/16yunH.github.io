@@ -8,7 +8,7 @@ lang: zh
 
 {% include base_path %}
 
-你也可以下载我的 [PDF 格式简历](http://16yunH.github.io/files/YunHong_CV.pdf)。
+你也可以下载我的 [PDF 格式简历]({{ base_path }}/files/CV_zh.pdf)。
 
 教育经历
 ======
