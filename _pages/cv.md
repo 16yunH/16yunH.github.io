@@ -16,7 +16,7 @@ redirect_from:
 
 Education
 ======
-* **B.S. Candidate in Computer Science**, Fudan University, Shanghai, China, Sep. 2023 - Present
+* **B.S. Candidate in Computer Science**, Fudan University, Shanghai, China, Sep. 2023 - Jul. 2027 (Expected)
 * **Exchange Student in Computer Science**, University of Texas at Austin, Austin, Texas, Aug. 2025 - Dec. 2025
 
 Research Experience
@@ -49,6 +49,7 @@ Skills
   
 * **Specialized Areas**
   * AI-Driven Autonomous Driving: planning, prediction, and decision making
+  * Computer Vision: Multi-view Geometry, 3D Reconstruction (SfM/Stereo), Camera Calibration, Object Detection & Segmentation, Optical Flow
   * Data Structures & Algorithms: Completed Data Structure (Honor) course by Weiwei Sun
 
 * **Languages**
@@ -56,6 +57,13 @@ Skills
 
 Projects
 ======
+* **LCDP-Sim: Language-Conditioned Diffusion Policy** (Dec. 2025 - Present)
+  * Independent Developer, Austin, Texas
+  * Developed an end-to-end Vision-Language-Action (VLA) system utilizing Diffusion Policy
+  * Integrated CLIP text encoder and U-Net-based DDPM/DDIM architecture for high-fidelity action generation
+  * Implemented Action Chunking (16-step prediction) to mitigate error accumulation
+  * Built complete pipeline for data collection, distributed training, and closed-loop evaluation in ManiSkill2
+
 * **MapNavigation** (Dec. 2024 - Present)
   * Independent Developer
   * Long-term maintained project combining OpenStreetMap data with Gaode Maps API
@@ -77,9 +85,9 @@ Extracurricular Activities
 
 Honors & Awards
 ======
-* **2024**: Finalist, Water, sanitation, and hygiene for the prevention and care of neglected tropical diseases (International)
-* **2025**: Excellent Work Award, The 5th Meituan Business Analytics Elite Competition  
-* **2024**: 3rd Prize, China Undergraduate Mathematical Contest in Modeling
+* **2024**: Finalist, Water, sanitation, and hygiene for the prevention and care of neglected tropical diseases (Geneva, Switzerland)
+* **2025.05**: Excellent Work Award, The 5th Meituan Business Analytics Elite Competition  
+* **2024.12**: 3rd Prize, China Undergraduate Mathematical Contest in Modeling (CUMCM)
 * **2023**: Finalist, Full-stack AI development engineer skills training by NVIDIA
 
 Publications

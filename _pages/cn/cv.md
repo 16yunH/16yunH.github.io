@@ -15,7 +15,7 @@ lang: zh
 
 教育经历
 ======
-* **计算机科学技术 本科**，复旦大学，中国上海，2023.09 - 至今
+* **计算机科学技术 本科**，复旦大学，中国上海，2023.09 - 2027.07（预计）
 * **计算机科学 交换生**，德克萨斯大学奥斯汀分校，美国奥斯汀，2025.08 - 2025.12
 
 专业技能
@@ -67,7 +67,8 @@ lang: zh
 * **2024**: Finalist, Water, sanitation, and hygiene for the prevention and care of neglected tropical diseases
 
 **国家级/省级**
-* **2024**: 全国大学生数学建模竞赛 (CUMCM) 三等奖
+* **2025.05**: 第五届美团商业分析精英大赛 优秀作品奖
+* **2024.12**: 全国大学生数学建模竞赛 (CUMCM) 三等奖
 * **2023**: Finalist, Full-stack AI development engineer skills training by NVIDIA
 
 发表论文

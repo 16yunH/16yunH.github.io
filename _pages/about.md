@@ -38,7 +38,7 @@ Working under the guidance of Wenchao Ding on risk maps for autonomous driving:
 ## Education
 
 **Fudan University** | Shanghai, China  
-*B.S. Candidate in Computer Science* | Sep. 2023 - Present
+*B.S. Candidate in Computer Science* | Sep. 2023 - Jul. 2027 (Expected)
 
 **University of Texas at Austin** | Austin, Texas  
 *Exchange Student in Computer Science* | Aug. 2025 - Dec. 2025
@@ -49,7 +49,8 @@ Working under the guidance of Wenchao Ding on risk maps for autonomous driving:
 - **Deep Learning**: CNN, RNN, LSTM, Transformer, GAN, Diffusion Models, PyTorch
 - **Programming**: C, C++, Python, Java, LaTeX
 - **AI-Driven Systems**: Autonomous Driving (planning, prediction, decision making)
-- **Data Structures & Algorithms**: Completed Data Structure (Honor) course with strong foundation
+- **Computer Vision**: Multi-view Geometry, 3D Reconstruction (SfM/Stereo), Camera Calibration, Object Detection & Segmentation, Optical Flow
+- **Data Structures & Algorithms**: Completed Data Structure (Honor) course by Weiwei Sun
 - **Languages**: Chinese (Native), English (Fluent)
 
 ## Featured Projects
