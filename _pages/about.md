@@ -69,9 +69,9 @@ Working under the guidance of Wenchao Ding on risk maps for autonomous driving:
 
 ## Contact
 
-📧 **Email**: [yh26768@utexas.edu](mailto:yh26768@utexas.edu)  
-📍 **Address**: 2819 Rio Grande St., Unit 515, Austin, Texas 78705  
-📱 **Phone**: +1 (512) 879-7214  
+📧 **Email**: [23300240019@m.fudan.edu.cn](mailto:23300240019@m.fudan.edu.cn)  
+📍 **Location**: Shanghai, China  
+📱 **Phone**: (+86) 158-0701-0023  
 💻 **GitHub**: [@16yunH](https://github.com/16yunH)
 
 ---

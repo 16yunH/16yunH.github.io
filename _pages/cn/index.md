@@ -73,7 +73,7 @@ lang: zh
 
 ## 联系方式
 
-📧 **邮箱**: [yh26768@utexas.edu](mailto:yh26768@utexas.edu)  
-📍 **地址**: 2819 Rio Grande St., Unit 515, Austin, Texas 78705  
-📱 **电话**: +1 (512) 879-7214  
+📧 **邮箱**: [23300240019@m.fudan.edu.cn](mailto:23300240019@m.fudan.edu.cn)  
+📍 **地址**: 中国上海  
+📱 **电话**: 158-0701-0023  
 💻 **GitHub**: [@16yunH](https://github.com/16yunH)
