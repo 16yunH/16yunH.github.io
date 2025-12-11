@@ -31,11 +31,17 @@
           {% endfor %}
 
           <li class="masthead__menu-item">
-            <a href="{% if page.lang == 'zh' %}{{ base_path }}{% if page.url == '/cn/' %}/{% else %}{{ page.url | replace: '/cn/', '/' }}{% endif %}{% else %}{{ base_path }}/cn{% if page.url == '/' %}/{% else %}{{ page.url }}{% endif %}{% endif %}"
-              class="lang-toggle"
-              style="display: inline-block; padding: 4px 10px; border: 1px solid currentColor; border-radius: 4px; font-size: 0.85em; text-decoration: none;">
-              {% if page.lang == 'zh' %}EN{% else %}中{% endif %}
-            </a>
+            {% if page.lang == 'zh' %}
+            {% assign target_url = page.url | replace: '/cn/', '/' %}
+            {% if page.url == '/cn/' %}{% assign target_url = '/' %}{% endif %}
+            <a href="{{ base_path }}{{ target_url }}" class="lang-toggle"
+              style="display: inline-block; padding: 5px 12px; border: 1.5px solid var(--global-text-color, currentColor); border-radius: 5px; font-size: 0.85em; font-weight: 500; text-decoration: none; transition: all 0.2s ease;">EN</a>
+            {% else %}
+            {% assign target_url = '/cn' | append: page.url %}
+            {% if page.url == '/' %}{% assign target_url = '/cn/' %}{% endif %}
+            <a href="{{ base_path }}{{ target_url }}" class="lang-toggle"
+              style="display: inline-block; padding: 5px 12px; border: 1.5px solid var(--global-text-color, currentColor); border-radius: 5px; font-size: 0.85em; font-weight: 500; text-decoration: none; transition: all 0.2s ease;">中文</a>
+            {% endif %}
           </li>
 
           <li id="theme-toggle" class="masthead__menu-item persist tail">
