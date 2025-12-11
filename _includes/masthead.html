@@ -30,18 +30,12 @@
           <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
 
-          <li class="masthead__menu-item" style="white-space: nowrap; display: inline-flex; align-items: center;">
-            {% if page.lang == 'zh' %}
-            {% assign en_url = page.url | replace: '/cn/', '/' %}
-            {% if page.url == '/cn/' %}{% assign en_url = '/' %}{% endif %}
-            <span style="font-weight: bold; cursor: default;">中</span>&nbsp;/&nbsp;<a href="{{ base_path }}{{ en_url }}"
-              style="display: inline;">EN</a>
-            {% else %}
-            {% assign cn_url = '/cn' | append: page.url %}
-            {% if page.url == '/' %}{% assign cn_url = '/cn/' %}{% endif %}
-            <span style="font-weight: bold; cursor: default;">EN</span>&nbsp;/&nbsp;<a
-              href="{{ base_path }}{{ cn_url }}" style="display: inline;">中</a>
-            {% endif %}
+          <li class="masthead__menu-item">
+            <a href="{% if page.lang == 'zh' %}{{ base_path }}{% if page.url == '/cn/' %}/{% else %}{{ page.url | replace: '/cn/', '/' }}{% endif %}{% else %}{{ base_path }}/cn{% if page.url == '/' %}/{% else %}{{ page.url }}{% endif %}{% endif %}"
+              class="lang-toggle"
+              style="display: inline-block; padding: 4px 10px; border: 1px solid currentColor; border-radius: 4px; font-size: 0.85em; text-decoration: none;">
+              {% if page.lang == 'zh' %}EN{% else %}中{% endif %}
+            </a>
           </li>
 
           <li id="theme-toggle" class="masthead__menu-item persist tail">

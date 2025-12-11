@@ -10,8 +10,8 @@
     {% if author.avatar contains "://" %}
     <img src="{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high" />
     {% else %}
-    <img src="{{ author.avatar | prepend: " /images/" | prepend: base_path }}" class="author__avatar"
-      alt="{{ author.name }}" fetchpriority="high" />
+    <img src="{{ base_path }}/images/{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}"
+      fetchpriority="high" />
     {% endif %}
   </div>
 
