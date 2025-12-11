@@ -54,6 +54,12 @@ Working under the guidance of Wenchao Ding on risk maps for autonomous driving:
 
 ## Featured Projects
 
+### [LCDP-Sim: Language-Conditioned Diffusion Policy](https://github.com/16yunH)
+*Dec. 2025 - Present*
+- End-to-end Vision-Language-Action (VLA) system utilizing Diffusion Policy
+- Maps RGB images and natural language instructions into robotic control signals
+- Integrated CLIP text encoder and U-Net-based DDPM/DDIM architecture
+
 ### [MapNavigation](https://github.com/16yunH/MapNavigation)
 *Dec. 2024 - Present*
 - Combines OpenStreetMap data with Gaode Maps API for accurate routing and location search

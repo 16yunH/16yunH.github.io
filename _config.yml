@@ -22,7 +22,7 @@ repository               : "16yunH/16yunH.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "photo_white.png"
+  avatar           : "profile.png"
   name             : "Yun Hong"
   pronouns         : # example: "she/her"  
   bio              : "Computer Science student at Fudan University | Exchange student at UT Austin | Research in ML, AI-Driven Autonomous Driving, and NLP"
