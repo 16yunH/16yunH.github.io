@@ -30,18 +30,17 @@
           <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
 
-          <li class="masthead__menu-item">
-            <span style="white-space: nowrap;">
-              {% if page.lang == 'zh' %}
-                {% assign en_url = page.url | replace: '/cn/', '/' %}
-                {% if page.url == '/cn/' %}{% assign en_url = '/' %}{% endif %}
-                <span style="font-weight: bold; cursor: default;">中</span> / <a href="{{ base_path }}{{ en_url }}">EN</a>
-              {% else %}
-                {% assign cn_url = '/cn' | append: page.url %}
-                {% if page.url == '/' %}{% assign cn_url = '/cn/' %}{% endif %}
-                <span style="font-weight: bold; cursor: default;">EN</span> / <a href="{{ base_path }}{{ cn_url }}">中</a>
-              {% endif %}
-            </span>
+          <li class="masthead__menu-item" style="white-space: nowrap;">
+            {% if page.lang == 'zh' %}
+              {% assign en_url = page.url | replace: '/cn/', '/' %}
+              {% if page.url == '/cn/' %}{% assign en_url = '/' %}{% endif %}
+              <span style="font-weight: bold; cursor: default;">中</span> / <a href="{{ base_path }}{{ en_url }}">EN</a>
+            {% else %}
+              {% assign cn_url = '/cn' | append: page.url %}
+              {% if page.url == '/' %}{% assign cn_url = '/cn/' %}{% endif %}
+              <span style="font-weight: bold; cursor: default;">EN</span> / <a href="{{ base_path }}{{ cn_url }}">中</a>
+            {% endif %}
+          </li>
 
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"

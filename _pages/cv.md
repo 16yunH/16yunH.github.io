@@ -9,7 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
-Download CV: [English]({{ base_path }}/files/CV_en.pdf) | [Chinese]({{ base_path }}/files/CV_zh.pdf)
+<div style="display: flex; gap: 20px; margin-bottom: 20px;">
+  <a href="{{ base_path }}/files/CV_en.pdf" class="btn btn--primary" style="text-decoration: none;">Download English CV</a>
+  <a href="{{ base_path }}/files/CV_zh.pdf" class="btn btn--primary" style="text-decoration: none;">Download Chinese CV</a>
+</div>
 
 Education
 ======
