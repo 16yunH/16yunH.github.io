@@ -53,20 +53,20 @@ lang: zh
 
 ## 精选项目
 
-### [LCDP-Sim: 基于语言条件的扩散策略](https://github.com/16yunH)
-*2025年12月 - 至今*
+### [LCDP-Sim: 基于语言条件的扩散策略](/portfolio/lcdp-sim/)
+*2025年12月 - 至今* | [GitHub](https://github.com/16yunH)
 - 基于 Diffusion Policy 的端到端视觉-语言-动作 (VLA) 系统
 - 将 RGB 图像和自然语言指令映射为机器人控制信号
 - 集成 CLIP 文本编码器和基于 U-Net 的 DDPM/DDIM 架构
 
-### [MapNavigation](https://github.com/16yunH/MapNavigation)
-*2024年12月 - 至今*
+### [MapNavigation](/portfolio/mapnavigation/)
+*2024年12月 - 至今* | [GitHub](https://github.com/16yunH/MapNavigation)
 - 结合 OpenStreetMap 数据与高德地图 API 的导航系统
 - 支持混合选点、详细路线信息显示和多种道路类型
 - 独立开发并长期维护
 
-### [NeuralStyle](https://github.com/16yunH/NeuralStyle)  
-*2025年6月 - 至今*
+### [NeuralStyle](/portfolio/neuralstyle/)
+*2025年6月 - 至今* | [GitHub](https://github.com/16yunH/NeuralStyle)
 - 模块化的神经风格迁移工具包
 - 支持批量处理和自动化生成工作流
 - 提供交互式 Web 界面和可配置管道

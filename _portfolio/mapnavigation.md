@@ -1,12 +1,14 @@
 ---
 title: "MapNavigation: Advanced Route Planning System"
-excerpt: "A comprehensive mapping and navigation system combining OpenStreetMap data with Gaode Maps API for accurate routing and location search capabilities.<br/><img src='/images/mapnav-preview.png'>"
+excerpt: "A comprehensive mapping and navigation system combining OpenStreetMap data with Gaode Maps API for accurate routing and location search capabilities."
 collection: portfolio
 ---
 
 ## MapNavigation Project
 
 A long-term maintained and updated project that combines OpenStreetMap data with Gaode Maps API to provide accurate routing and location search capabilities.
+
+**GitHub Repository**: [https://github.com/16yunH/MapNavigation](https://github.com/16yunH/MapNavigation)
 
 ### Key Features
 
@@ -26,10 +28,6 @@ A long-term maintained and updated project that combines OpenStreetMap data with
 ### Development Timeline
 
 **December 2024 - Present**: Independent development with commitment to long-term maintenance and feature updates.
-
-### Repository
-
-The complete codebase for this project is available at [GitHub](https://github.com/16yunH/MapNavigation).
 
 ### Impact
 

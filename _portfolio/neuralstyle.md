@@ -1,12 +1,14 @@
 ---
 title: "NeuralStyle: Modular Neural Style Transfer Toolkit"
-excerpt: "A comprehensive neural style transfer toolkit with modular architecture, batch processing capabilities, and interactive web interface.<br/><img src='/images/neuralstyle-preview.png'>"
+excerpt: "A comprehensive neural style transfer toolkit with modular architecture, batch processing capabilities, and interactive web interface."
 collection: portfolio
 ---
 
 ## NeuralStyle Project
 
 A modular neural style transfer toolkit developed in Python with clear modular separation for maintainability and extensibility.
+
+**GitHub Repository**: [https://github.com/16yunH/NeuralStyle](https://github.com/16yunH/NeuralStyle)
 
 ### Key Features
 
@@ -31,10 +33,6 @@ A modular neural style transfer toolkit developed in Python with clear modular s
 - Web interface development and user experience optimization  
 - Continuous updates with feature enhancements and bug fixes
 - Version control with detailed changelog documentation (v1.1.0)
-
-### Repository
-
-Open-sourced at [GitHub](https://github.com/16yunH/NeuralStyle) with continuous updates and active maintenance.
 
 ### Technical Skills Demonstrated
 
