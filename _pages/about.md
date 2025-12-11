@@ -9,7 +9,7 @@ redirect_from:
 
 ## About Me
 
-I am Yun Hong (洪运), a Computer Science student at **Fudan University** (复旦大学) in Shanghai, China, and currently an exchange student at the **University of Texas at Austin**. My research interests span Machine Learning, AI-Driven Autonomous Driving, and Natural Language Processing.
+I am Yun Hong (洪运), a Computer Science student at **Fudan University** (复旦大学) in Shanghai, China, and currently an exchange student at the **University of Texas at Austin**. My research interests span Machine Learning, Robotics, and Autonomous Driving.
 
 *"So we beat on, boats against the current."*
 
