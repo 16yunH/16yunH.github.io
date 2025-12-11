@@ -8,7 +8,7 @@ lang: zh
 
 {% include base_path %}
 
-你也可以下载我的 [PDF 格式简历]({{ base_path }}/files/CV_zh.pdf)。
+下载简历：[中文]({{ base_path }}/files/CV_zh.pdf) | [英文]({{ base_path }}/files/CV_en.pdf)
 
 教育经历
 ======

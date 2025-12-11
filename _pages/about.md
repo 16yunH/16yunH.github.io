@@ -5,12 +5,11 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-lang: en
 ---
 
 ## About Me
 
-I am Yun Hong (洪云), a Computer Science student at **Fudan University** (复旦大学) in Shanghai, China, and currently an exchange student at the **University of Texas at Austin**. My research interests span Machine Learning, AI-Driven Autonomous Driving, and Natural Language Processing.
+I am Yun Hong (洪运), a Computer Science student at **Fudan University** (复旦大学) in Shanghai, China, and currently an exchange student at the **University of Texas at Austin**. My research interests span Machine Learning, AI-Driven Autonomous Driving, and Natural Language Processing.
 
 *"So we beat on, boats against the current."*
 
@@ -50,17 +49,10 @@ Working under the guidance of Wenchao Ding on risk maps for autonomous driving:
 - **Deep Learning**: CNN, RNN, LSTM, Transformer, GAN, Diffusion Models, PyTorch
 - **Programming**: C, C++, Python, Java, LaTeX
 - **AI-Driven Systems**: Autonomous Driving (planning, prediction, decision making)
-- **Computer Vision**: Multi-view Geometry, 3D Reconstruction, Object Detection
 - **Data Structures & Algorithms**: Completed Data Structure (Honor) course with strong foundation
 - **Languages**: Chinese (Native), English (Fluent)
 
 ## Featured Projects
-
-### [LCDP-Sim: Language-Conditioned Diffusion Policy](https://github.com/16yunH)
-*Dec. 2025 - Present*
-- End-to-end Vision-Language-Action (VLA) system utilizing Diffusion Policy
-- Maps RGB images and natural language instructions into robotic control signals
-- Integrated CLIP text encoder and U-Net-based DDPM/DDIM architecture
 
 ### [MapNavigation](https://github.com/16yunH/MapNavigation)
 *Dec. 2024 - Present*
