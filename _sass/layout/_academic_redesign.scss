@@ -202,7 +202,7 @@ h6,
 
 .profile-card__links-title {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #365167;
@@ -210,12 +210,12 @@ h6,
 
 .profile-card__links-list {
   list-style: none;
-  margin: 0.45rem 0 0;
+  margin: 0.34rem 0 0;
   padding: 0;
 }
 
 .profile-card__links-list li {
-  margin-bottom: 0.38rem;
+  margin-bottom: 0.24rem;
 }
 
 .profile-card__links-list li:last-child {
@@ -225,28 +225,28 @@ h6,
 .profile-card__links-list a {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0.52rem;
-  border-radius: 8px;
-  border: 1px solid rgba(24, 37, 52, 0.15);
-  background: rgba(255, 255, 255, 0.9);
+  gap: 0.36rem;
+  padding: 0.14rem 0.06rem;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
   color: #203444;
-  font-size: 0.86rem;
+  font-size: 0.84rem;
   line-height: 1.3;
   text-decoration: none;
-  transition: transform 0.16s ease, border-color 0.2s ease, background-color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .profile-card__links-list a:hover {
-  transform: translateY(-1px);
-  border-color: rgba(27, 78, 123, 0.38);
-  background: rgba(243, 248, 252, 0.98);
-  text-decoration: none;
+  color: #1b4e7b;
+  text-decoration: underline;
 }
 
 .profile-card__links-list i {
-  width: 1rem;
+  width: 0.76rem;
+  font-size: 0.72rem;
   color: #2c5f8a;
+  opacity: 0.84;
 }
 
 /* Dark mode full-surface overrides */
@@ -331,14 +331,12 @@ html[data-theme="dark"] .profile-card__links-title {
 }
 
 html[data-theme="dark"] .profile-card__links-list a {
-  border-color: rgba(217, 227, 237, 0.22);
-  background: rgba(32, 43, 56, 0.92);
   color: #e7eff7;
 }
 
 html[data-theme="dark"] .profile-card__links-list a:hover {
-  border-color: rgba(131, 191, 236, 0.48);
-  background: rgba(43, 58, 74, 0.96);
+  color: #9fd0f6;
+  text-decoration: underline;
 }
 
 /* Desktop layout fix: explicit grid with a wider sidebar */
@@ -347,7 +345,7 @@ html[data-theme="dark"] .profile-card__links-list a:hover {
     display: grid;
     grid-template-columns: minmax(226px, 272px) minmax(0, 1fr);
     gap: 1.55rem;
-    align-items: start;
+    align-items: stretch;
     max-width: 1340px;
     padding-left: 1.4rem;
     padding-right: 1.4rem;
@@ -365,10 +363,14 @@ html[data-theme="dark"] .profile-card__links-list a:hover {
     max-width: none;
     margin: 0;
     padding-right: 0;
-    position: sticky;
-    top: 5.4rem;
-    height: auto;
-    overflow: visible;
+    position: relative;
+    top: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #main > .sidebar .profile-card {
+    height: 100%;
   }
 
   #main > .sidebar + .page,

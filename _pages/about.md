@@ -23,12 +23,6 @@ redirect_from:
 
 {% endfor %}
 
-## Skills
-
-{% for skill in home.skills %}
-- {{ skill.en }}
-{% endfor %}
-
 ## Research Experience
 
 {% for exp in home.research %}
@@ -63,6 +57,12 @@ redirect_from:
 - {{ bullet.en }}
 {% endfor %}
 
+{% endfor %}
+
+## Skills
+
+{% for skill in home.skills %}
+- {{ skill.en }}
 {% endfor %}
 
 ## Honors and Awards

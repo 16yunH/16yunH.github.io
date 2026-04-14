@@ -21,12 +21,6 @@ lang: zh
 
 {% endfor %}
 
-## 专业技能
-
-{% for skill in home.skills %}
-- {{ skill.zh }}
-{% endfor %}
-
 ## 科研经历
 
 {% for exp in home.research %}
@@ -61,6 +55,12 @@ lang: zh
 - {{ bullet.zh }}
 {% endfor %}
 
+{% endfor %}
+
+## 专业技能
+
+{% for skill in home.skills %}
+- {{ skill.zh }}
 {% endfor %}
 
 ## 荣誉与奖项
