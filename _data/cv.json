@@ -37,6 +37,19 @@
   },
   "work": [
     {
+      "name": "The University of Texas at Austin",
+      "position": "Research Assistant",
+      "startDate": "2025-09",
+      "endDate": "2025-12",
+      "summary": "Research on multi-task active perception for robotic information gathering under partial observability under Junhong Xu.",
+      "highlights": [
+        "Built multi-task partially observable simulation benchmarks",
+        "Covered two core settings: unknown object physical properties and unknown spatial locations",
+        "Implemented and compared IL, RL, and IL-pretraining + RL-finetuning paradigms on VLA models",
+        "Summarized related work on robotic manipulation exploration and long-horizon POMDP benchmarks"
+      ]
+    },
+    {
       "name": "Fudan University, Natural Language Processing Group",
       "position": "Research Assistant",
       "startDate": "2024-09",
@@ -59,7 +72,20 @@
         "Engineered dynamic risk field representations with spatiotemporal modeling",
         "Developed traffic scene generation with diffusion models",
         "Designed a lightweight network for efficient risk prediction",
-        "Research submitted to IEEE Robotics and Automation Letters (RAL)"
+        "Accepted by IEEE Robotics and Automation Letters (RA-L)"
+      ]
+    },
+    {
+      "name": "ByteDance (Douyin R&D, Quality Assurance, Live Streaming & Media Stream)",
+      "position": "Test Development Engineer Intern",
+      "startDate": "2026-01",
+      "endDate": "Present",
+      "summary": "Internship in QA engineering and efficiency tooling.",
+      "highlights": [
+        "Refactored and expanded internal inspection and test cases",
+        "Improved accuracy from 89% to 100%",
+        "Improved test coverage from 95% to 98%",
+        "Developing an LLM-powered efficiency tool for QA workflows"
       ]
     }
   ],

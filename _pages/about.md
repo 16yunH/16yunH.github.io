@@ -9,7 +9,7 @@ redirect_from:
 
 ## Research Focus
 
-I am Yun Hong (洪运), a B.S. candidate in Computer Science at **Fudan University**, currently an exchange student at **The University of Texas at Austin**. I work on machine learning, robotics, and autonomous driving, with a current emphasis on robust reasoning and risk-aware decision systems.
+I am Yun Hong (洪运), a B.S. candidate in Computer Science at **Fudan University** and former exchange student at **The University of Texas at Austin**. My research focuses on machine learning, robotics, and autonomous driving.
 
 ## Education
 
@@ -19,7 +19,12 @@ B.S. Candidate in Computer Science, Sep 2023 - Jul 2027 (expected)
 **The University of Texas at Austin**, Austin, TX, USA  
 Exchange Student in Computer Science, Aug 2025 - Dec 2025
 
-## Ongoing and Recent Research
+## Research Experience
+
+**Research Assistant, The University of Texas at Austin** (Sep 2025 - Dec 2025)
+- Worked on multi-task active perception for robotic information gathering under partial observability.
+- Built multi-task partially observable simulation benchmarks with unknown object properties and unknown spatial locations.
+- Implemented and compared IL, RL, and IL-pretraining + RL-finetuning paradigms on VLA models.
 
 **Research Assistant, Fudan NLP Group** (Sep 2024 - Jun 2025)  
 Research on ChatGPT-o1 model reproduction and reflection ability improvement.
@@ -33,7 +38,14 @@ Learning Risk Map for Autonomous Driving in Partially Observable Environments.
 - Modeled dynamic risk fields with spatiotemporal representations.
 - Developed diffusion-based traffic scene generation.
 - Designed lightweight risk prediction networks.
-- Manuscript submitted to IEEE Robotics and Automation Letters (RAL).
+- Accepted by IEEE Robotics and Automation Letters (RA-L).
+
+## Internship Experience
+
+**Test Development Engineer Intern, ByteDance (Douyin R&D)** (Jan 2026 - Present)
+- Refactored and expanded internal inspection and test cases, improving accuracy from 89% to 100%.
+- Improved test coverage from 95% to 98%.
+- Developing an LLM-powered tool to improve QA workflow efficiency.
 
 ## Selected Projects
 

@@ -9,10 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-<div style="display: flex; gap: 20px; margin-bottom: 20px;">
-  <a href="{{ base_path }}/files/CV_en.pdf" class="btn btn--primary">Download English CV</a>
-  <a href="{{ base_path }}/files/CV_zh.pdf" class="btn btn--primary">Download Chinese CV</a>
-</div>
+Download:
+- [English CV]({{ base_path }}/files/CV_en.pdf)
+- [Chinese CV]({{ base_path }}/files/CV_zh.pdf)
 
 Education
 ======
@@ -21,6 +20,12 @@ Education
 
 Research Experience
 ======
+* **Sep. 2025 - Dec. 2025: Research Assistant**
+  * The University of Texas at Austin, Austin, TX, USA
+  * Project: Multi-Task Active Perception for Robotic Information Gathering
+  * Supervisor: Junhong Xu
+  * Duties: Built multi-task partially observable simulation benchmarks; implemented and compared imitation learning, reinforcement learning, and IL-pretraining + RL-finetuning paradigms on VLA models
+
 * **Sep. 2024 - Jun. 2025: Research Assistant**
   * Fudan University Natural Language Processing Group
   * Project: Research on ChatGPT-o1 model reproduction and reflection ability improvement
@@ -32,7 +37,15 @@ Research Experience
   * Project: Learning Risk Map for Autonomous Driving in Partially Observable Environments
   * Supervisor: Wenchao Ding
   * Duties: Engineering risk field representations using spatiotemporal modeling; developing traffic scene generation with diffusion models; designing lightweight neural networks for risk prediction
-  * Status: Research submitted to IEEE Robotics and Automation Letters (RAL)
+  * Status: Accepted by IEEE Robotics and Automation Letters (RA-L)
+
+Internship Experience
+======
+* **Jan. 2026 - Present: Test Development Engineer Intern**
+  * ByteDance (Douyin R&D, Quality Assurance, Live Streaming & Media Stream), Shanghai, China
+  * Refactored and expanded internal inspection and test cases, improving accuracy from 89% to 100%
+  * Improved test coverage from 95% to 98%
+  * Developing an LLM-powered efficiency tool for QA workflows
 
 Skills
 ======
@@ -75,13 +88,6 @@ Projects
   * Modular neural style transfer toolkit with batch processing capabilities
   * Interactive web interface and configurable pipeline for experimentation
   * Repository: [https://github.com/16yunH/NeuralStyle](https://github.com/16yunH/NeuralStyle)
-
-Extracurricular Activities
-======
-* **Core Member**, China Undergraduate Mathematical Contest in Modeling (CUMCM), Sep. 2024
-* **Core Member**, Fudan University's team of aid education in Yudu, Jiangxi, Jan. 2024 - Feb. 2024
-* **Member**, Fudan Piano Association, Oct. 2023 - Present
-* **Keyboard Player**, Fudan Musicians Alliance, Sep. 2024 - Present
 
 Honors & Awards
 ======
