@@ -41,12 +41,17 @@ h6,
 }
 
 .sidebar {
-  padding-right: 0.8rem;
+  padding-right: 1.1rem;
 }
 
 .author__avatar img {
+  max-width: 140px;
   border-radius: 10px;
   border: 1px solid var(--global-border-color);
+}
+
+.author-card {
+  overflow: hidden;
 }
 
 .author__content,
@@ -106,7 +111,7 @@ h6,
   background: transparent;
   border: 0;
   box-shadow: none;
-  padding: 0;
+  padding: 0.1rem 0 0 0.35rem;
 }
 
 .list__item {
@@ -118,8 +123,19 @@ h6,
 }
 
 @media (max-width: 1024px) {
+
   .author__content,
   .author__urls-wrapper {
     padding: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    position: sticky;
+    top: 78px;
+    height: auto;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
   }
 }
