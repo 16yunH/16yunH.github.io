@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://16yunH.github.io/sitemap.xml
