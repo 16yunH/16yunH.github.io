@@ -1,7 +1,7 @@
 ---
 permalink: /cn/
 title: "洪运"
-author_profile: false
+author_profile: true
 lang: zh
 ---
 
