@@ -10,7 +10,7 @@ collection: portfolio
 
 *Independent Developer | Austin, Texas | Dec. 2025 - Present*
 
-**GitHub Repository**: [https://github.com/16yunH](https://github.com/16yunH)
+**GitHub Repository**: [https://github.com/16yunH/LCDP-Sim](https://github.com/16yunH/LCDP-Sim)
 
 ### Overview
 Developed an end-to-end Vision-Language-Action (VLA) system utilizing Diffusion Policy to map RGB images and natural language instructions into robotic control signals.

@@ -108,7 +108,7 @@ internships:
 projects:
   - name_en: "LCDP-Sim: Language-Conditioned Diffusion Policy"
     name_zh: "LCDP-Sim：基于语言条件的扩散策略"
-    link: "https://github.com/16yunH"
+    link: "https://github.com/16yunH/LCDP-Sim"
     role_en: "Independent Developer"
     role_zh: "独立开发者"
     location_en: "Austin, Texas"
