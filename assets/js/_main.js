@@ -31,12 +31,16 @@ let setTheme = (theme) => {
     $("html").attr("data-theme") ||
     browserPref;
 
-  if (use_theme === "dark") {
+  const resolved_theme = use_theme === "system"
+    ? ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? "dark" : "light")
+    : use_theme;
+
+  if (resolved_theme === "dark") {
     $("html").attr("data-theme", "dark");
     if ($("#theme-icon").length) {
       $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
     }
-  } else if (use_theme === "light") {
+  } else if (resolved_theme === "light") {
     $("html").removeAttr("data-theme");
     if ($("#theme-icon").length) {
       $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
@@ -46,7 +50,7 @@ let setTheme = (theme) => {
 
 // Toggle the theme manually
 var toggleTheme = () => {
-  const current_theme = $("html").attr("data-theme");
+  const current_theme = determineComputedTheme();
   const new_theme = current_theme === "dark" ? "light" : "dark";
   localStorage.setItem("theme", new_theme);
   setTheme(new_theme);
