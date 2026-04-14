@@ -60,7 +60,12 @@ lang: zh
 ## 专业技能
 
 {% for skill in home.skills %}
+{% if skill.zh contains '：' %}
+{% assign skill_parts = skill.zh | split: '：' %}
+- **{{ skill_parts[0] }}：**{{ skill.zh | remove_first: skill_parts[0] | remove_first: '：' }}
+{% else %}
 - {{ skill.zh }}
+{% endif %}
 {% endfor %}
 
 ## 荣誉与奖项

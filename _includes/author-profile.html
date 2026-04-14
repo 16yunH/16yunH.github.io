@@ -47,17 +47,7 @@
   </ul>
 
   <div class="profile-card__links">
-    <h4 class="profile-card__links-title">{% if is_zh %}关键链接{% else %}Key Links{% endif %}</h4>
     <ul class="profile-card__links-list">
-      {% if is_zh %}
-      <li><a href="{{ base_path }}/cn/cv/"><i class="fas fa-file-lines" aria-hidden="true"></i><span>简历页面</span></a></li>
-      <li><a href="{{ base_path }}/cn/publications/"><i class="fas fa-book" aria-hidden="true"></i><span>发表论文</span></a></li>
-      <li><a href="{{ base_path }}/files/CV_zh.pdf"><i class="fas fa-download" aria-hidden="true"></i><span>下载中文简历</span></a></li>
-      {% else %}
-      <li><a href="{{ base_path }}/cv/"><i class="fas fa-file-lines" aria-hidden="true"></i><span>CV Page</span></a></li>
-      <li><a href="{{ base_path }}/publications/"><i class="fas fa-book" aria-hidden="true"></i><span>Publications</span></a></li>
-      <li><a href="{{ base_path }}/files/CV_en.pdf"><i class="fas fa-download" aria-hidden="true"></i><span>Download CV</span></a></li>
-      {% endif %}
       {% if author.googlescholar %}
       <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Google Scholar</span></a></li>
       {% endif %}

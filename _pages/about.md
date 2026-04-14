@@ -62,7 +62,12 @@ redirect_from:
 ## Skills
 
 {% for skill in home.skills %}
+{% if skill.en contains ':' %}
+{% assign skill_parts = skill.en | split: ':' %}
+- **{{ skill_parts[0] }}:**{{ skill.en | remove_first: skill_parts[0] | remove_first: ':' }}
+{% else %}
 - {{ skill.en }}
+{% endif %}
 {% endfor %}
 
 ## Honors and Awards
