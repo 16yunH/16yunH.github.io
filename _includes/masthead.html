@@ -32,14 +32,37 @@
 
           <li class="masthead__menu-item">
             {% if page.lang == 'zh' %}
-            {% assign target_url = page.url | replace: '/cn/', '/' %}
-            {% if page.url == '/cn/' %}{% assign target_url = '/' %}{% endif %}
+            {% if page.url == '/cn/' %}
+            {% assign target_url = '/' %}
+            {% elsif page.url == '/cn/publications/' %}
+            {% assign target_url = '/publications/' %}
+            {% elsif page.url == '/cn/cv/' %}
+            {% assign target_url = '/cv/' %}
+            {% elsif page.url == '/cn/portfolio/' %}
+            {% assign target_url = '/portfolio/' %}
+            {% else %}
+            {% assign target_url = '/' %}
+            {% endif %}
             <a href="{{ base_path }}{{ target_url }}" class="lang-toggle">EN</a>
             {% else %}
-            {% assign target_url = '/cn' | append: page.url %}
-            {% if page.url == '/' %}{% assign target_url = '/cn/' %}{% endif %}
+            {% if page.url == '/' %}
+            {% assign target_url = '/cn/' %}
+            {% elsif page.url == '/publications/' %}
+            {% assign target_url = '/cn/publications/' %}
+            {% elsif page.url == '/cv/' %}
+            {% assign target_url = '/cn/cv/' %}
+            {% elsif page.url == '/portfolio/' %}
+            {% assign target_url = '/cn/portfolio/' %}
+            {% else %}
+            {% assign target_url = '/cn/' %}
+            {% endif %}
             <a href="{{ base_path }}{{ target_url }}" class="lang-toggle">中文</a>
             {% endif %}
+          </li>
+
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"
+                title="toggle theme"></i></a>
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>

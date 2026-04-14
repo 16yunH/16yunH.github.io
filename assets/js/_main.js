@@ -11,6 +11,7 @@ let determineThemeSetting = () => {
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
 // "system", the computed theme is determined based on the user's system preference.
+const userPref = window.matchMedia ? window.matchMedia.bind(window) : null;
 let determineComputedTheme = () => {
   let themeSetting = determineThemeSetting();
   if (themeSetting != "system") {
@@ -32,10 +33,14 @@ let setTheme = (theme) => {
 
   if (use_theme === "dark") {
     $("html").attr("data-theme", "dark");
-    $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
+    if ($("#theme-icon").length) {
+      $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
+    }
   } else if (use_theme === "light") {
     $("html").removeAttr("data-theme");
-    $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
+    if ($("#theme-icon").length) {
+      $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
+    }
   }
 };
 
