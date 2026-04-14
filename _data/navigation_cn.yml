@@ -1,4 +1,7 @@
 main:
+  - title: "首页"
+    url: /cn/
+
   - title: "发表论文"
     url: /cn/publications/
     

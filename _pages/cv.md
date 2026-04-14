@@ -10,8 +10,8 @@ redirect_from:
 {% include base_path %}
 
 <div style="display: flex; gap: 20px; margin-bottom: 20px;">
-  <a href="{{ base_path }}/files/CV_en.pdf" class="btn btn--primary" style="text-decoration: none;">Download English CV</a>
-  <a href="{{ base_path }}/files/CV_zh.pdf" class="btn btn--primary" style="text-decoration: none;">Download Chinese CV</a>
+  <a href="{{ base_path }}/files/CV_en.pdf" class="btn btn--primary">Download English CV</a>
+  <a href="{{ base_path }}/files/CV_zh.pdf" class="btn btn--primary">Download Chinese CV</a>
 </div>
 
 Education

@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Yun Hong | Computer Science Student"
+title                    : "Yun Hong | Academic Homepage"
 title_separator          : "-"
 name                     : &name "Yun Hong"
-description              : &description "Computer Science student at Fudan University, Exchange student at UT Austin"
+description              : &description "B.S. candidate in Computer Science at Fudan University and exchange student at UT Austin, focusing on machine learning, robotics, and autonomous driving"
 url                      : https://16yunH.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "16yunH/16yunH.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "photo_white.png"
   name             : "Yun Hong"
   pronouns         : # example: "she/her"  
-  bio              : "Computer Science student at Fudan University | Exchange student at UT Austin | Research in ML, Robotics, and Autonomous Driving"
+  bio              : "B.S. candidate in Computer Science at Fudan University and exchange student at UT Austin. Research interests: machine learning, robotics, and autonomous driving."
   location         : "Austin, Texas / Shanghai, China"
   employer         : "Fudan University"
   uri              : # URL
@@ -34,10 +34,10 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # URL - Update with the correct link to your profile
+  googlescholar    : "https://scholar.google.com/citations?user=V7qCKd0AAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "http://orcid.org/0009-0008-5637-3064"
+  orcid            : "https://orcid.org/0009-0008-5637-3064"
   semantic         : # URL
   pubmed           : # URL
   researchgate     : # URL

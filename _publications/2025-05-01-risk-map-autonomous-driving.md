@@ -6,9 +6,9 @@ permalink: /publication/2025-risk-map-autonomous-driving
 excerpt: 'This paper presents a novel approach for learning risk maps in autonomous driving scenarios under partial observability constraints, utilizing advanced spatiotemporal modeling and diffusion models.'
 date: 2025-05-01
 venue: 'IEEE Robotics and Automation Letters (RAL)'
-status: 'Under Review'
-paperurl: '#'
-citation: 'Hong, Y., Ding, W. et al. (2025). &quot;Learning Risk Map for Autonomous Driving in Partially Observable Environments.&quot; <i>IEEE Robotics and Automation Letters (RAL)</i>. (Under Review)'
+status: 'Accepted'
+paperurl: 'https://ieeexplore.ieee.org/abstract/document/11399898'
+citation: 'Hong, Y., Ding, W. et al. (2025). &quot;Learning Risk Map for Autonomous Driving in Partially Observable Environments.&quot; <i>IEEE Robotics and Automation Letters (RAL)</i>.'
 ---
 
 ## Abstract
@@ -46,7 +46,7 @@ This work was conducted at MagicLab, Fudan University, under the guidance of Wen
 
 ## Status
 
-**Current Status**: Preprint prepared and submitted to IEEE Robotics and Automation Letters (RAL) for peer review.
+**Current Status**: Accepted by IEEE Robotics and Automation Letters (RAL). [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11399898)
 
 ## Impact
 

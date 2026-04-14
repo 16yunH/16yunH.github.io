@@ -34,13 +34,11 @@
             {% if page.lang == 'zh' %}
             {% assign target_url = page.url | replace: '/cn/', '/' %}
             {% if page.url == '/cn/' %}{% assign target_url = '/' %}{% endif %}
-            <a href="{{ base_path }}{{ target_url }}" class="lang-toggle"
-              style="display: inline-block; padding: 5px 12px; border: 1.5px solid var(--global-text-color, currentColor); border-radius: 5px; font-size: 0.85em; font-weight: 500; text-decoration: none; transition: all 0.2s ease;">EN</a>
+            <a href="{{ base_path }}{{ target_url }}" class="lang-toggle">EN</a>
             {% else %}
             {% assign target_url = '/cn' | append: page.url %}
             {% if page.url == '/' %}{% assign target_url = '/cn/' %}{% endif %}
-            <a href="{{ base_path }}{{ target_url }}" class="lang-toggle"
-              style="display: inline-block; padding: 5px 12px; border: 1.5px solid var(--global-text-color, currentColor); border-radius: 5px; font-size: 0.85em; font-weight: 500; text-decoration: none; transition: all 0.2s ease;">中文</a>
+            <a href="{{ base_path }}{{ target_url }}" class="lang-toggle">中文</a>
             {% endif %}
           </li>
 

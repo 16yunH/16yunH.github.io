@@ -9,8 +9,8 @@ lang: zh
 {% include base_path %}
 
 <div style="display: flex; gap: 20px; margin-bottom: 20px;">
-  <a href="{{ base_path }}/files/CV_zh.pdf" class="btn btn--primary" style="text-decoration: none;">下载中文简历</a>
-  <a href="{{ base_path }}/files/CV_en.pdf" class="btn btn--primary" style="text-decoration: none;">下载英文简历</a>
+  <a href="{{ base_path }}/files/CV_zh.pdf" class="btn btn--primary">下载中文简历</a>
+  <a href="{{ base_path }}/files/CV_en.pdf" class="btn btn--primary">下载英文简历</a>
 </div>
 
 教育经历
