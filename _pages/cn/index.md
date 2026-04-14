@@ -5,20 +5,72 @@ author_profile: true
 lang: zh
 ---
 
-洪运，复旦大学计算机科学技术本科生，曾在德克萨斯大学奥斯汀分校交换学习。
+{% assign home = site.data.homepage %}
 
-研究方向：机器学习、机器人学、自动驾驶。
+{{ home.intro.zh }}
 
-## 关键链接
+## 教育经历
 
-- [简历](/cn/cv/)
-- [发表论文](/cn/publications/)
-- [Google Scholar](https://scholar.google.com/citations?user=V7qCKd0AAAAJ)
-- [GitHub](https://github.com/16yunH)
-- [邮箱](mailto:23300240019@m.fudan.edu.cn)
+{% for edu in home.education %}
+### {{ edu.institution_zh }} | {{ edu.location_zh }}
+**{{ edu.degree_zh }}**  
+*{{ edu.period_zh }}*
+{% for highlight in edu.highlights %}
+- {{ highlight.zh }}
+{% endfor %}
 
-## 近况
+{% endfor %}
 
-- 2026：字节跳动抖音研发 测试开发实习生
-- 2025：UT Austin 研究助理（Junhong Xu）
-- 2025：自动驾驶风险地图工作被 IEEE RA-L 接收
+## 专业技能
+
+{% for skill in home.skills %}
+- {{ skill.zh }}
+{% endfor %}
+
+## 科研经历
+
+{% for exp in home.research %}
+### {{ exp.title_zh }}
+**{{ exp.role_zh }}** | {{ exp.location_zh }}  
+*{{ exp.period_zh }}*
+{% for bullet in exp.bullets %}
+- {{ bullet.zh }}
+{% endfor %}
+
+{% endfor %}
+
+## 实习经历
+
+{% for intern in home.internships %}
+### {{ intern.company_zh }}
+**{{ intern.role_zh }}** | {{ intern.location_zh }}  
+*{{ intern.period_zh }}*
+{% for bullet in intern.bullets %}
+- {{ bullet.zh }}
+{% endfor %}
+
+{% endfor %}
+
+## 项目经历
+
+{% for project in home.projects %}
+### [{{ project.name_zh }}]({{ project.link }})
+**{{ project.role_zh }}** | {{ project.location_zh }}  
+*{{ project.period_zh }}*
+{% for bullet in project.bullets %}
+- {{ bullet.zh }}
+{% endfor %}
+
+{% endfor %}
+
+## 荣誉与奖项
+
+### 国际级
+{% for award in home.honors.international %}
+- **{{ award.year }}**：{{ award.item_zh }}
+{% endfor %}
+
+### 国内级
+{% for award in home.honors.domestic %}
+- **{{ award.year }}**：{{ award.item_zh }}
+{% endfor %}

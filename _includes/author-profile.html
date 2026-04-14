@@ -3,105 +3,73 @@
 {% if page.author and site.data.authors[page.author] %}
 {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
+{% assign is_zh = false %}
+{% if page.lang == 'zh' %}
+{% assign is_zh = true %}
+{% endif %}
 
-<div class="author-card" itemscope itemtype="http://schema.org/Person">
+<div class="profile-card" itemscope itemtype="http://schema.org/Person">
 
-      <div class="author__avatar">
-            {% if author.avatar contains "://" %}
-            <img src="{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high" />
-            {% else %}
-            <img src="{{ base_path }}/images/{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}"
-                  fetchpriority="high" />
-            {% endif %}
-      </div>
+  <div class="profile-card__avatar">
+    {% if author.avatar contains "://" %}
+    <img src="{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high" />
+    {% else %}
+    <img src="{{ base_path }}/images/{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high" />
+    {% endif %}
+  </div>
 
-      <div class="author__content">
-            <h3 class="author__name">
-                  {% if page.lang == 'zh' %}
-                  洪运
-                  {% else %}
-                  {{ author.name }}
-                  {% endif %}
-            </h3>
-            {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-            {% if author.bio %}
-            <p class="author__bio">
-                  {% if page.lang == 'zh' %}
-                  复旦大学计算机科学本科生 | UT Austin 交换生 | 研究方向：机器学习、机器人学、自动驾驶
-                  {% else %}
-                  {{ author.bio }}
-                  {% endif %}
-            </p>
-            {% endif %}
-      </div>
+  <div class="profile-card__body">
+    <h3 class="profile-card__name">
+      {% if is_zh %}
+      洪运
+      {% else %}
+      {{ author.name }}
+      {% endif %}
+    </h3>
+    {% if author.bio %}
+    <p class="profile-card__bio">
+      {% if is_zh %}
+      复旦大学计算机科学本科生，曾在 UT Austin 交换学习。研究方向：机器学习、机器人学、自动驾驶与风险感知决策。
+      {% else %}
+      {{ author.bio }}
+      {% endif %}
+    </p>
+    {% endif %}
+  </div>
 
-      <div class="author__urls-wrapper">
-            <ul class="author__urls social-icons">
-                  {% if author.location %}
-                  <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right"
-                              aria-hidden="true"></i>{{
-                        author.location }}</li>
-                  {% endif %}
-                  {% if author.employer %}
-                  <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right"
-                              aria-hidden="true"></i>{{
-                        author.employer }}</li>
-                  {% endif %}
-                  {% if author.uri %}
-                  <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{
-                              site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
-                  {% endif %}
-                  {% if author.email %}
-                  <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right"
-                                    aria-hidden="true"></i>{{
-                              site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
-                  {% endif %}
-                  {% if author.academia %}
-                  <li><a href="{{ author.academia }}"><i class="ai ai-academia ai-fw icon-pad-right"
-                                    aria-hidden="true"></i>Academia</a></li>
-                  {% endif %}
-                  {% if author.arxiv %}
-                  <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i>arXiv</a></li>
-                  {% endif %}
-                  {% if author.googlescholar %}
-                  <li><a href="{{ author.googlescholar }}"><i
-                                    class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google
-                              Scholar</a></li>
-                  {% endif %}
-                  {% if author.semantic %}
-                  <li><a href="{{ author.semantic }}"><i
-                                    class="ai ai-semantic-scholar ai-fw icon-pad-right"></i>Semantic
-                              Scholar</a></li>
-                  {% endif %}
-                  {% if author.impactstory %}
-                  <li><a href="{{ author.impactstory }}"><i
-                                    class="ai ai-impactstory ai-fw icon-pad-right"></i>Impactstory</a></li>
-                  {% endif %}
-                  {% if author.orcid %}
-                  <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
-                  {% endif %}
-                  {% if author.pubmed %}
-                  <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed ai-fw icon-pad-right"></i>PubMed</a></li>
-                  {% endif %}
-                  {% if author.researchgate %}
-                  <li><a href="{{ author.researchgate }}"><i class="fab fa-fw fa-researchgate icon-pad-right"
-                                    aria-hidden="true"></i>ResearchGate</a></li>
-                  {% endif %}
-                  {% if author.scopus %}
-                  <li><a href="{{ author.scopus }}"><i class="ai ai-scopus ai-fw icon-pad-right"></i>Scopus</a></li>
-                  {% endif %}
-                  {% if author.inspire-hep %}
-                  <li><a href="{{ author.inspire-hep }}"><i
-                                    class="ai ai-inspire ai-fw icon-pad-right"></i>INSPIRE-HEP</a></li>
-                  {% endif %}
-                  {% if author.github %}
-                  <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right"
-                                    aria-hidden="true"></i>GitHub</a></li>
-                  {% endif %}
-                  {% if author.kaggle %}
-                  <li><a href="https://kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle icon-pad-right"
-                                    aria-hidden="true"></i>Kaggle</a></li>
-                  {% endif %}
-            </ul>
-      </div>
+  <ul class="profile-card__meta">
+    {% if author.location %}
+    <li><i class="fas fa-location-dot" aria-hidden="true"></i><span>{{ author.location }}</span></li>
+    {% endif %}
+    {% if author.employer %}
+    <li><i class="fas fa-building-columns" aria-hidden="true"></i><span>{{ author.employer }}</span></li>
+    {% endif %}
+  </ul>
+
+  <div class="profile-card__links">
+    <h4 class="profile-card__links-title">{% if is_zh %}关键链接{% else %}Key Links{% endif %}</h4>
+    <ul class="profile-card__links-list">
+      {% if is_zh %}
+      <li><a href="{{ base_path }}/cn/cv/"><i class="fas fa-file-lines" aria-hidden="true"></i><span>简历页面</span></a></li>
+      <li><a href="{{ base_path }}/cn/publications/"><i class="fas fa-book" aria-hidden="true"></i><span>发表论文</span></a></li>
+      <li><a href="{{ base_path }}/files/CV_zh.pdf"><i class="fas fa-download" aria-hidden="true"></i><span>下载中文简历</span></a></li>
+      {% else %}
+      <li><a href="{{ base_path }}/cv/"><i class="fas fa-file-lines" aria-hidden="true"></i><span>CV Page</span></a></li>
+      <li><a href="{{ base_path }}/publications/"><i class="fas fa-book" aria-hidden="true"></i><span>Publications</span></a></li>
+      <li><a href="{{ base_path }}/files/CV_en.pdf"><i class="fas fa-download" aria-hidden="true"></i><span>Download CV</span></a></li>
+      {% endif %}
+      {% if author.googlescholar %}
+      <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Google Scholar</span></a></li>
+      {% endif %}
+      {% if author.orcid %}
+      <li><a href="{{ author.orcid }}"><i class="ai ai-orcid" aria-hidden="true"></i><span>ORCID</span></a></li>
+      {% endif %}
+      {% if author.github %}
+      <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>
+      {% endif %}
+      {% if author.email %}
+      <li><a href="mailto:{{ author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i><span>{% if is_zh %}邮箱{% else %}Email{% endif %}</span></a></li>
+      {% endif %}
+    </ul>
+  </div>
 </div>

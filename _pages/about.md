@@ -7,20 +7,72 @@ redirect_from:
   - /about.html
 ---
 
-Yun Hong is a B.S. candidate in Computer Science at **Fudan University**, and a former exchange student at **The University of Texas at Austin**.
+{% assign home = site.data.homepage %}
 
-Research interests: machine learning, robotics, and autonomous driving.
+{{ home.intro.en }}
 
-## Key Links
+## Education
 
-- [CV](/cv/)
-- [Publications](/publications/)
-- [Google Scholar](https://scholar.google.com/citations?user=V7qCKd0AAAAJ)
-- [GitHub](https://github.com/16yunH)
-- [Email](mailto:23300240019@m.fudan.edu.cn)
+{% for edu in home.education %}
+### {{ edu.institution_en }} | {{ edu.location_en }}
+**{{ edu.degree_en }}**  
+*{{ edu.period_en }}*
+{% for highlight in edu.highlights %}
+- {{ highlight.en }}
+{% endfor %}
 
-## Updates
+{% endfor %}
 
-- 2026: Test Development Engineer Intern, ByteDance (Douyin R&D)
-- 2025: Research Assistant, UT Austin (Junhong Xu)
-- 2025: RA-L accepted work on risk map learning for autonomous driving
+## Skills
+
+{% for skill in home.skills %}
+- {{ skill.en }}
+{% endfor %}
+
+## Research Experience
+
+{% for exp in home.research %}
+### {{ exp.title_en }}
+**{{ exp.role_en }}** | {{ exp.location_en }}  
+*{{ exp.period_en }}*
+{% for bullet in exp.bullets %}
+- {{ bullet.en }}
+{% endfor %}
+
+{% endfor %}
+
+## Internship Experience
+
+{% for intern in home.internships %}
+### {{ intern.company_en }}
+**{{ intern.role_en }}** | {{ intern.location_en }}  
+*{{ intern.period_en }}*
+{% for bullet in intern.bullets %}
+- {{ bullet.en }}
+{% endfor %}
+
+{% endfor %}
+
+## Project Experience
+
+{% for project in home.projects %}
+### [{{ project.name_en }}]({{ project.link }})
+**{{ project.role_en }}** | {{ project.location_en }}  
+*{{ project.period_en }}*
+{% for bullet in project.bullets %}
+- {{ bullet.en }}
+{% endfor %}
+
+{% endfor %}
+
+## Honors and Awards
+
+### International
+{% for award in home.honors.international %}
+- **{{ award.year }}**: {{ award.item_en }}
+{% endfor %}
+
+### Domestic
+{% for award in home.honors.domestic %}
+- **{{ award.year }}**: {{ award.item_en }}
+{% endfor %}
