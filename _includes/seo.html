@@ -45,6 +45,9 @@
 
 {% if seo_url %}
   <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+  <link rel="alternate" hreflang="en" href="{{ seo_url }}/" />
+  <link rel="alternate" hreflang="zh" href="{{ seo_url }}/cn/" />
+  <link rel="alternate" hreflang="x-default" href="{{ seo_url }}/" />
 {% endif %}
 
 {% if site.twitter.username %}
@@ -91,6 +94,7 @@
       "@context" : "http://schema.org",
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
       "name" : "{{ site.social.name | default: site.name }}",
+      "alternateName" : "洪运",
       "url" : {{ seo_url | jsonify }},
       "sameAs" : {{ site.social.links | jsonify }}
     }
@@ -112,16 +116,14 @@
 <!-- end SEO -->
 
 <!-- Open Graph protocol data (https://ogp.me/), used by social media -->
-<meta property="og:locale" content="{{ site.locale | default: "en" }}">
+<meta property="og:locale" content="{% if page.lang == 'zh' %}zh_CN{% else %}{{ site.locale | default: "en" }}{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}"> 
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 {% if page.date %}
   <meta property="og:type" content="article">
 {% endif %}
-{% if page.excerpt %}
+{% if seo_description %}
   <meta property="og:description" name="description" content="{{ seo_description }}">
-{% elsif site.og_description %}
-  <meta property="og:description" name="description" content="{{ site.og_description }}">
 {% endif %}
 {% if seo_url %}
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">

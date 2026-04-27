@@ -1,6 +1,7 @@
 ---
 permalink: /cn/
 title: "洪运"
+description: "洪运，复旦大学计算机科学技术本科生，曾在德克萨斯大学奥斯汀分校交换学习。研究兴趣聚焦于机器学习、机器人学、自动驾驶与风险感知决策。"
 author_profile: true
 lang: zh
 ---

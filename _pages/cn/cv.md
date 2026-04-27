@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "简历"
+description: "洪运的简历 - 复旦大学计算机科学技术本科生"
 permalink: /cn/cv/
 author_profile: true
 lang: zh

@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Yun Hong"
+title: "Yun Hong | 洪运"
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,6 +10,8 @@ redirect_from:
 {% assign home = site.data.homepage %}
 
 {{ home.intro.en }}
+
+<span lang="zh">（中文名：洪运 / 复旦大学）</span>
 
 ## Education
 
