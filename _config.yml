@@ -147,10 +147,6 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://github.com/16yunH"
-    - "https://scholar.google.com/citations?user=V7qCKd0AAAAJ"
-    - "https://orcid.org/0009-0008-5637-3064"
-    - "https://kaggle.com/YunH16"
 
 
 # Analytics
