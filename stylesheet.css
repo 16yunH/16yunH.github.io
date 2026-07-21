@@ -1,103 +1,268 @@
 /* Computer Modern Serif */
 @font-face {
-  font-family: 'Computer Modern Serif';
+  font-family: "Computer Modern Serif";
   font-style: normal;
   font-weight: 400;
-  src: url('https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/Serif/cmunrm.woff2') format('woff2');
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/Serif/cmunrm.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: 'Computer Modern Serif';
+  font-family: "Computer Modern Serif";
   font-style: italic;
   font-weight: 400;
-  src: url('https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/Serif/cmunti.woff2') format('woff2');
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/Serif/cmunti.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: 'Computer Modern Serif';
+  font-family: "Computer Modern Serif";
   font-style: normal;
   font-weight: 700;
-  src: url('https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/Serif/cmunbx.woff2') format('woff2');
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/Serif/cmunbx.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: 'Computer Modern Serif';
+  font-family: "Computer Modern Serif";
   font-style: italic;
   font-weight: 700;
-  src: url('https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/Serif/cmunbi.woff2') format('woff2');
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/computer-modern-web-font@1.0.0/Serif/cmunbi.woff2") format("woff2");
 }
 
-a {
-  color: #1772d0;
-  text-decoration: none;
+:root {
+  color-scheme: light;
+  --ink: #242424;
+  --link: #1772d0;
+  --link-hover: #873c00;
+  --focus-ring: #f6c98b;
+  --featured: #ffffd0;
+  --featured-border: #c78c00;
 }
 
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
+* {
+  box-sizing: border-box;
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Computer Modern Serif', Georgia, 'Times New Roman', serif;
-  font-size: 15px;
-}
-
-strong {
-  font-family: 'Computer Modern Serif', Georgia, 'Times New Roman', serif;
-  font-size: 15px;
-}
-
-h2 {
+body {
   margin: 0;
-  font-weight: normal;
-  font-family: 'Computer Modern Serif', Georgia, 'Times New Roman', serif;
-  font-size: 22px;
+  color: var(--ink);
+  background: #fff;
+  font-family: "Computer Modern Serif", Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-.papertitle {
-  font-family: 'Computer Modern Serif', Georgia, 'Times New Roman', serif;
-  font-size: 15px;
-  font-weight: 700;
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.14em;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  color: var(--link-hover);
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.page-shell {
+  width: min(calc(100% - 32px), 800px);
+  margin: 0 auto;
+  padding: 32px 0 24px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(180px, 1fr);
+  gap: 32px;
+  align-items: center;
 }
 
 .name {
-  padding-top: 20px;
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hero-copy > p {
+  margin: 0 0 12px;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 14px;
+}
+
+.portrait-link {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  justify-self: end;
+  border-radius: 4px;
+}
+
+.portrait-link picture,
+.portrait-link img {
+  display: block;
+}
+
+.portrait-link img {
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.site-section {
+  padding-top: 30px;
+}
+
+.site-section h2 {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.site-section > p {
   margin: 0;
-  font-family: 'Computer Modern Serif', Georgia, 'Times New Roman', serif;
-  font-size: 32px;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
+.entries {
+  display: grid;
+  gap: 14px;
 }
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.entry {
+  display: grid;
+  grid-template-columns: minmax(135px, 1fr) minmax(0, 4fr);
+  gap: 20px;
+  padding: 12px 0;
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.entry--featured {
+  margin: 0 -12px;
+  padding: 16px;
+  border-left: 4px solid var(--featured-border);
+  background: var(--featured);
 }
 
-span.highlight {
-  background-color: #ffffd0;
+.entry-meta {
+  color: #3a3a3a;
+  text-align: right;
 }
 
-.colored-box {
-    color: black;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
+.entry-meta p,
+.entry-content p {
+  margin: 0;
+}
+
+.entry-meta h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.entry-meta span {
+  white-space: nowrap;
+}
+
+.entry-content h3 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.entry-content p + p {
+  margin-top: 8px;
+}
+
+.detail-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.detail-list > div {
+  display: grid;
+  grid-template-columns: minmax(165px, 1fr) minmax(0, 3fr);
+  gap: 20px;
+}
+
+.detail-list dt {
+  font-weight: 700;
+  text-align: right;
+}
+
+.detail-list dd {
+  margin: 0;
+}
+
+.site-footer {
+  margin-top: 36px;
+  padding-top: 16px;
+  border-top: 1px solid #dedede;
+  text-align: right;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(calc(100% - 28px), 800px);
+    padding-top: 24px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .portrait-link {
+    max-width: 280px;
+    justify-self: center;
+  }
+
+  .site-section {
+    padding-top: 26px;
+  }
+
+  .entry,
+  .detail-list > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .entry {
+    padding: 10px 0;
+  }
+
+  .entry--featured {
+    margin: 0 -8px;
+    padding: 14px;
+  }
+
+  .entry-meta,
+  .detail-list dt {
+    text-align: left;
+  }
+
+  .site-footer {
+    text-align: left;
+  }
 }
