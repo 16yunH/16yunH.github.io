@@ -20,7 +20,9 @@
 
 编辑 `cv/CV_zh.tex` 和 `cv/CV_en.tex`；共用联系方式与内容核对日期在
 `cv/profile.tex`，论文书目信息在 `cv/publication.tex`。
-涉及主页展示的信息，也应同步修改 `index.html`。
+每次修改研究、教育、实习、项目或奖项等个人信息，必须同步更新
+`index.html`、`cv/CV_zh.tex` 与 `cv/CV_en.tex`，并重新生成两份正式 PDF。
+维护约定记录在 [`AGENTS.md`](AGENTS.md)。
 
 安装 Tectonic，或包含 XeLaTeX 的 TeX 发行版后，在仓库根目录编译：
 
