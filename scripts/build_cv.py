@@ -7,12 +7,46 @@ python3 scripts/build_cv.py --lang zh   # build only the Chinese CV
 """
 from pathlib import Path
 import argparse
+import hashlib
+import re
 import shutil
 import subprocess
 import sys
+from urllib.parse import urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'cv'
+
+
+def refresh_cv_links(root):
+    """Give each homepage CV URL the version of its published PDF bytes."""
+    versions = {
+        lang: hashlib.sha256((root / 'data' / f'CV_{lang}.pdf').read_bytes()).hexdigest()[:12]
+        for lang in ['en', 'zh']
+    }
+    homepage = root / 'index.html'
+    original = homepage.read_text(encoding='utf-8')
+    pattern = re.compile(
+        r'(?P<start>\bhref=)(?P<quote>[\"\x27])'
+        r'(?P<url>data/CV_(?P<lang>en|zh)\.pdf(?:[?#][^\"\x27]*)?)'
+        r'(?P=quote)'
+    )
+    seen = []
+
+    def replace(match):
+        lang = match.group('lang')
+        seen.append(lang)
+        url = urlsplit(match.group('url'))
+        versioned = urlunsplit(('', '', url.path, 'v=' + versions[lang], url.fragment))
+        quote = match.group('quote')
+        return match.group('start') + quote + versioned + quote
+
+    updated = pattern.sub(replace, original)
+    if sorted(seen) != ['en', 'zh']:
+        raise RuntimeError('Expected exactly one English and one Chinese CV link in index.html.')
+    if updated != original:
+        homepage.write_text(updated, encoding='utf-8')
+    print('Homepage CV links match the published PDF versions.')
 
 
 def compile_cv(engine, language, output):
@@ -49,8 +83,18 @@ def main():
     parser.add_argument('--engine', choices=['auto', 'tectonic', 'latexmk', 'xelatex'], default='auto')
     parser.add_argument('--output-dir', type=Path, default=ROOT / 'output/pdf')
     parser.add_argument('--sync', action='store_true', help='Copy successful builds to website data/. Does not publish.')
+    parser.add_argument('--refresh-links', action='store_true', help='Version homepage links for existing data/ PDFs without compiling.')
     parser.add_argument('--copy-to', type=Path, help='Also copy successful builds to an explicit directory, e.g. a personal CV folder.')
     args = parser.parse_args()
+    if args.refresh_links:
+        if args.sync or args.copy_to:
+            parser.error('--refresh-links cannot be combined with --sync or --copy-to.')
+        try:
+            refresh_cv_links(ROOT)
+            return 0
+        except (RuntimeError, OSError) as error:
+            print(f'CV link update failed: {error}', file=sys.stderr)
+            return 1
     engine = args.engine
     if engine == 'auto':
         engine = next((e for e in ['tectonic', 'latexmk', 'xelatex'] if shutil.which(e)), None)
@@ -72,6 +116,8 @@ def main():
                 if pdf.resolve() != target.resolve():
                     shutil.copy2(pdf, target)
                 print(f'Synced: {target}')
+        if args.sync:
+            refresh_cv_links(ROOT)
         for pdf in pdfs:
             print(f'Built: {pdf}')
     except (RuntimeError, OSError, subprocess.CalledProcessError) as error:

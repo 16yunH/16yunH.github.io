@@ -54,8 +54,15 @@ python3 scripts/build_cv.py --sync
 python3 scripts/build_cv.py --sync --copy-to "$HOME/personal/CV"
 ```
 
-`--sync` 只更新本地 `data/`，不会提交、推送或发布网站。
+`--sync` 更新本地 `data/`，并按每份 PDF 的 SHA-256 内容哈希刷新主页链接的
+`?v=...` 参数，避免同名 PDF 的旧缓存。不会提交、推送或发布网站。
 也可在任何工作目录通过脚本的绝对路径执行，源文件及输出路径会自动定位。
+
+若 PDF 已经是最新版，仅需修复链接版本，可运行：
+
+```sh
+python3 scripts/build_cv.py --refresh-links
+```
 
 ## 直接使用 LaTeX 编辑器 / Overleaf
 

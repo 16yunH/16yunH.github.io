@@ -36,6 +36,7 @@ python3 scripts/build_cv.py
 python3 scripts/build_cv.py --sync
 ```
 
+`--sync` 同时更新主页简历链接的内容哈希版本参数，防止浏览器继续使用旧 PDF 缓存。
 该命令只更新本地文件，不会提交或推送。字体、编辑器配置、单语言编译等
 详细说明见 [`cv/README.md`](cv/README.md)。
 
@@ -54,6 +55,12 @@ python3 -m http.server 8000 --bind 127.0.0.1
 `master`。GitHub Pages 从该分支的仓库根目录发布，推送后应检查部署结果与线上页面。
 
 `.gitignore` 仅排除生成文件和本机设置，不排除 LaTeX 源文件、字体或正式下载 PDF。
+
+修改下载或同步流程后，运行缓存回归检查：
+
+```sh
+python3 -m unittest discover -s tests -v
+```
 
 ## 来源
 
