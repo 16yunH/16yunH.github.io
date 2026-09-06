@@ -1,0 +1,94 @@
+% !TeX program = xelatex
+% Edit this file directly; cv-style.sty controls the layout.
+\documentclass[10pt,a4paper]{article}
+\usepackage{cv-style}
+\input{profile.tex}
+\hypersetup{pdftitle={Yun Hong - Curriculum Vitae},pdflang={en}}
+\begin{document}
+\cvsetup{en}
+\cvheader{Yun Hong}{COMPUTER SCIENCE \textbar{} FUDAN UNIVERSITY}
+I conduct research at MagicLab, Fudan University, under the guidance of Wenchao Ding. My current research focuses on world models for embodied intelligence.
+
+\cvsection{Education}
+\begin{cventry}{Fudan University}{Sep 2023 - Present}{B.S. candidate in Computer Science \textbar{} Shanghai, China}
+\end{cventry}
+
+\begin{cventry}{The University of Texas at Austin}{Aug - Dec 2025}{Exchange student in Computer Science \textbar{} Austin, TX, USA}
+\begin{cvitems}
+\item GPA: 4.0/4.0 (13 credits). A grades in machine learning, computer vision, operating systems, and probability/random processes.
+\end{cvitems}
+\end{cventry}
+
+\cvsection{Research Experience}
+\begin{cventry}{World Models for Embodied Intelligence}{Current research}{MagicLab, Fudan University \textbar{} Advisor: Wenchao Ding}
+\begin{cvitems}
+\item Investigating how execution feedback can help embodied world-action models detect deviations and correct subsequent actions.
+\end{cvitems}
+\end{cventry}
+
+\begin{cventry}{Risk-Map Learning for Autonomous Driving}{Oct 2024 - May 2025}{MagicLab, Fudan University \textbar{} Advisor: Wenchao Ding}
+\begin{cvitems}
+\item Contributed to the Transformer-based risk-prediction framework, model training, debugging, and result verification.
+\item Fourth author of the RA-L 2026 publication listed below.
+\end{cvitems}
+\end{cventry}
+
+\begin{cventry}{Multi-Task Active Perception}{Fall 2025}{RobIn Lab, UT Austin \textbar{} Advisor: Junhong Xu}
+\begin{cvitems}
+\item Built multi-task partially observable simulation benchmarks involving unknown object properties and spatial locations.
+\item Developed VLA baseline training and evaluation workflows to study imitation learning, reinforcement learning, and IL pretraining followed by RL fine-tuning.
+\item Reviewed manipulation exploration and long-horizon POMDP benchmarks; the project primarily completed benchmark and baseline evaluation workflows.
+\end{cvitems}
+\end{cventry}
+
+\begin{cventry}{LLM Reasoning, Reflection, and Self-Correction}{Sep 2024 - Jun 2025}{Fudan NLP \textbar{} Advisor: Xuanjing Huang}
+\begin{cvitems}
+\item Constructed self-critic data using Llama3.1-8B-Instruct, with tree-search and reverse-reasoning strategies for diverse correction trajectories.
+\item Built data synthesis and training workflows; evaluated reasoning and reflection methods on GSM8K.
+\end{cvitems}
+\end{cventry}
+
+\cvsection{Publication}
+\input{publication.tex}
+
+\newpage
+\cvsection{Internship Experience}
+\begin{cventry}{ByteDance}{Jan - Jun 2026}{Test Development Engineer Intern \textbar{} Douyin R\&D, Live Streaming \& Media Stream QA}
+\begin{cvitems}
+\item Developed three AI-assisted tools for routine monitoring, test-case risk checking, and alert summarization.
+\item Refactored and expanded inspection and test cases. Monitoring accuracy increased from 89\% to 100\% and coverage from 95\% to 98\% within the evaluated scope.
+\end{cvitems}
+\end{cventry}
+
+\cvsection{Selected Projects}
+\begin{cventry}{LCDP-Sim: Language-Conditioned Diffusion Policy}{Started Dec 2025}{\href{https://github.com/16yunH/LCDP-Sim}{https://github.com/16yunH/LCDP-Sim}}
+\begin{cvitems}
+\item Built a vision-language-action system with CLIP and a U-Net DDPM/DDIM diffusion policy, including 16-step action chunking.
+\item Implemented data collection, training, and closed-loop evaluation workflows in ManiSkill2.
+\end{cvitems}
+\end{cventry}
+
+\begin{cventry}{MapNavigation}{Started Dec 2024}{\href{https://github.com/16yunH/MapNavigation}{https://github.com/16yunH/MapNavigation}}
+\begin{cvitems}
+\item Integrated OpenStreetMap and Gaode Maps API for route planning, location search, hybrid point selection, and road-type speed constraints.
+\end{cvitems}
+\end{cventry}
+
+\begin{cventry}{NeuralStyle}{Started Jun 2025}{\href{https://github.com/16yunH/NeuralStyle}{https://github.com/16yunH/NeuralStyle}}
+\begin{cvitems}
+\item Developed a modular Python style-transfer toolkit with batch processing, configurable experiments, and a browser-based interface.
+\end{cvitems}
+\end{cventry}
+
+\cvsection{Skills}
+\cvdetail{Machine learning}{Supervised/unsupervised learning, reinforcement learning, imitation learning, model evaluation and generalization.}
+\cvdetail{Deep learning \& robotics}{PyTorch, Transformers, diffusion models, LLaMA fine-tuning, VLA policies, active perception, POMDPs, and robotic manipulation.}
+\cvdetail{Vision \& driving}{Multi-view geometry, 3D reconstruction, detection and segmentation, motion planning, trajectory prediction, and risk-field modeling.}
+\cvdetail{Programming \& languages}{C, C++, Python, LaTeX; Chinese (native), English (fluent).}
+\cvsection{Honors \& Awards}
+\cvdetail{2026}{Award recipient, Tencent Rhino-Bird Open-Source Talent Program: OpenCloudOS Security Skill issue (one of three awardees).}
+\cvdetail{2025}{Outstanding Work Award, The 5th Meituan Business Analysis Elite Competition.}
+\cvdetail{2024}{Shanghai Third Prize, China Undergraduate Mathematical Contest in Modeling (CUMCM).}
+\cvdetail{2024}{Finalist, Water, sanitation, and hygiene for the prevention and care of neglected tropical diseases (Geneva, Switzerland).}
+\cvdetail{2023}{Finalist, Full-stack AI development engineer skills training by NVIDIA.}
+\end{document}

@@ -1,0 +1,18 @@
+# Generated build output; publishable CV PDFs remain tracked in data/.
+/output/
+__pycache__/
+*.py[cod]
+
+# Machine-specific files.
+.DS_Store
+/.claude/settings.local.json
+
+# LaTeX outputs (including direct editor builds inside cv/)
+/cv/*.aux
+/cv/*.log
+/cv/*.out
+/cv/*.xdv
+/cv/*.synctex.gz
+/cv/*.fls
+/cv/*.fdb_latexmk
+/cv/CV_*.pdf

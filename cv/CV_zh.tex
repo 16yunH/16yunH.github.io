@@ -1,0 +1,94 @@
+% !TeX program = xelatex
+% Edit this file directly; cv-style.sty controls the layout.
+\documentclass[10pt,a4paper]{article}
+\usepackage{cv-style}
+\input{profile.tex}
+\hypersetup{pdftitle={洪运 - 中文简历},pdflang={zh-CN}}
+\begin{document}
+\cvsetup{zh}
+\cvheader{洪运}{计算机科学与技术 \textbar{} 复旦大学}
+在复旦大学 MagicLab、丁文超老师指导下持续参与科研，目前开展具身智能中的世界模型方向研究。
+
+\cvsection{教育经历}
+\begin{cventry}{复旦大学}{2023.09 - 至今}{计算机科学与技术 本科在读 \textbar{} 上海}
+\end{cventry}
+
+\begin{cventry}{得克萨斯大学奥斯汀分校}{2025.08 - 2025.12}{计算机科学 本科交换 \textbar{} 美国奥斯汀}
+\begin{cvitems}
+\item GPA：4.0/4.0，共 13 学分；机器学习、计算机视觉、操作系统、概率与随机过程四门课程均为 A。
+\end{cvitems}
+\end{cventry}
+
+\cvsection{科研经历}
+\begin{cventry}{具身智能中的世界模型研究}{当前研究}{复旦大学 MagicLab \textbar{} 指导老师：丁文超}
+\begin{cvitems}
+\item 研究如何利用真实执行反馈，帮助具身世界动作模型发现预测与执行之间的偏差，并修正后续动作。
+\end{cvitems}
+\end{cventry}
+
+\begin{cventry}{部分可观测环境下的自动驾驶风险地图学习}{2024.10 - 2025.05}{复旦大学 MagicLab \textbar{} 指导老师：丁文超}
+\begin{cvitems}
+\item 协助师兄完成 Transformer 风险预测框架搭建，以及模型训练、调试与结果验证。
+\item 相关论文发表于 IEEE RA-L 2026，本人为第四作者，完整书目信息见下。
+\end{cvitems}
+\end{cventry}
+
+\begin{cventry}{多任务机器人的主动感知与信息获取}{2025 年秋季}{UT Austin RobIn Lab \textbar{} 指导老师：Junhong Xu}
+\begin{cvitems}
+\item 搭建包含未知物体属性与未知空间位置的多任务、部分可观测机器人仿真 benchmark。
+\item 搭建 VLA 基线训练与评测流程，用于研究模仿学习、强化学习、模仿预训练后强化微调三条路线。
+\item 调研机器人操作探索与长时序 POMDP 文献；项目主要完成 benchmark 与基线评测流程。
+\end{cvitems}
+\end{cventry}
+
+\begin{cventry}{大模型推理反思与自查机制}{2024.09 - 2025.06}{复旦大学自然语言处理组 \textbar{} 指导老师：黄萱菁}
+\begin{cvitems}
+\item 基于 Llama3.1-8B-Instruct 构建 Self-Critic 数据，采用树搜索与逆向推理生成多样化纠错轨迹。
+\item 搭建数据合成与训练流程，在 GSM8K 上评估推理与反思方法。
+\end{cvitems}
+\end{cventry}
+
+\cvsection{论文发表}
+\input{publication.tex}
+
+\newpage
+\cvsection{实习经历}
+\begin{cventry}{字节跳动}{2026.01 - 2026.06}{测试开发实习生 \textbar{} 抖音研发 · 直播流媒体质量保障 \textbar{} 上海}
+\begin{cvitems}
+\item 开发三类 AI 提效工具，分别面向日常监测、测试用例风险检查和报警汇总分析。
+\item 重构并新增巡检测试用例；在既定评测范围内，监测准确率由 89\% 提升至 100\%，覆盖率由 95\% 提升至 98\%。
+\end{cvitems}
+\end{cventry}
+
+\cvsection{项目经历}
+\begin{cventry}{LCDP-Sim：语言条件扩散策略机械臂控制}{始于 2025.12}{\href{https://github.com/16yunH/LCDP-Sim}{https://github.com/16yunH/LCDP-Sim}}
+\begin{cvitems}
+\item 构建结合 CLIP 与 U-Net DDPM/DDIM 扩散策略的视觉语言动作系统，实现 16 步 Action Chunking。
+\item 在 ManiSkill2 中搭建数据采集、训练与闭环评测流程。
+\end{cvitems}
+\end{cventry}
+
+\begin{cventry}{MapNavigation：路径规划与导航系统}{始于 2024.12}{\href{https://github.com/16yunH/MapNavigation}{https://github.com/16yunH/MapNavigation}}
+\begin{cvitems}
+\item 集成 OpenStreetMap 与高德地图 API，实现路径规划、地点搜索、混合选点及多道路类型速度约束。
+\end{cvitems}
+\end{cventry}
+
+\begin{cventry}{NeuralStyle：模块化神经风格迁移工具箱}{始于 2025.06}{\href{https://github.com/16yunH/NeuralStyle}{https://github.com/16yunH/NeuralStyle}}
+\begin{cvitems}
+\item 开发模块化 Python 风格迁移工具，支持多图批处理、可配置实验流程和浏览器交互界面。
+\end{cvitems}
+\end{cventry}
+
+\cvsection{专业技能}
+\cvdetail{机器学习}{监督与无监督学习、强化学习、模仿学习、模型评估与泛化。}
+\cvdetail{深度学习与机器人}{PyTorch、Transformer、扩散模型、LLaMA 微调、VLA、主动感知、POMDP 与机器人操作。}
+\cvdetail{视觉与自动驾驶}{多视图几何、三维重建、目标检测与分割、运动规划、轨迹预测与风险场建模。}
+\cvdetail{编程与语言}{C、C++、Python、LaTeX；中文（母语），英语（流利、学术读写）。}
+\cvsection{获奖情况}
+\cvdetail{2026}{腾讯犀牛鸟开源人才培养计划：OpenCloudOS Security Skill issue 实战获奖者，为该题三名获奖者之一。}
+\cvdetail{2025}{第五届美团商业分析精英大赛优秀作品奖。}
+\cvdetail{2024}{全国大学生数学建模竞赛上海市三等奖。}
+\cvdetail{2024}{Water, sanitation, and hygiene for the prevention and care of neglected tropical diseases 入围（日内瓦）。}
+\cvdetail{2023}{NVIDIA 全栈 AI 开发工程师技能培训入围。}
+\end{document}
