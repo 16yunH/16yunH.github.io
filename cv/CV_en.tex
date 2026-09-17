@@ -7,24 +7,28 @@
 \begin{document}
 \cvsetup{en}
 \cvheader{Yun Hong}{COMPUTER SCIENCE \textbar{} FUDAN UNIVERSITY}
-I conduct research at MagicLab, Fudan University, under the guidance of Wenchao Ding. My current research focuses on execution feedback and subtask handoffs for world-action models in long-horizon robotic manipulation.
+I conduct research at MagicLab, Fudan University, under the guidance of Wenchao Ding. My research focuses on execution feedback, policy adaptation, and failure recovery for long-horizon robotic manipulation, using world-action models as a primary platform.
 
 \cvsection{Education}
 \begin{cventry}{Fudan University}{Sep 2023 - Present}{B.S. candidate in Computer Science \textbar{} Shanghai, China}
+\begin{cvitems}
+\item Selected for the Top-Notch Talent Experimental Program in Computer Science and Technology.
+\item Average grade: \textbf{90/100} (official percentage conversion certified by Fudan University; Sep 2026).
+\end{cvitems}
 \end{cventry}
 
 \begin{cventry}{The University of Texas at Austin}{Aug - Dec 2025}{Exchange student in Computer Science \textbar{} Austin, TX, USA}
 \begin{cvitems}
-\item GPA: 4.0/4.0 (13 credits). A grades in machine learning, computer vision, operating systems, and probability/random processes.
+\item A grades in all four courses (13 credits): machine learning, computer vision, operating systems, and probability/random processes.
 \end{cvitems}
 \end{cventry}
 
 \cvsection{Research Experience}
-\begin{cventry}{World-Action Models for Robotic Manipulation}{Current research}{MagicLab, Fudan University \textbar{} Advisor: Wenchao Ding}
+\begin{cventry}{Execution Feedback and Recovery for Robotic Manipulation}{Ongoing research}{MagicLab, Fudan University \textbar{} Advisor: Wenchao Ding}
 \begin{cvitems}
-\item Developing an execution-feedback framework around LingBot-VA on LIBERO-Long; studying how task progress and predicted-future discrepancies can condition the same policy to revise actions.
-\item Using state replay and controlled interventions to distinguish changes in model outputs from task recovery, and examine the roles of arm/gripper configurations, reachability, and streaming observation history at subtask handoffs.
-\item Investigating how favorable simulated starting states can be reached through safe, executable actions for subsequent WAM-controlled manipulation.
+\item Developing execution-feedback experiments with LingBot-VA on LIBERO-Long; using state replay and controlled interventions to distinguish output changes, feasible recovery actions, and closed-loop task completion.
+\item Studying how task-state feedback and recovery-data adaptation can help the same policy revise actions at subtask handoffs while preserving required task progress.
+\item Investigating feedback's value beyond ordinary recovery training and the added value of predicted futures. Preliminary successes remain limited to specific states and stages; generalization is under study.
 \end{cvitems}
 \end{cventry}
 
